@@ -1,0 +1,28 @@
+{
+  "name":         "ladybird",
+  "description":  "When Dependency Injection meets CoffeeScript",
+  "keywords":     ["javasript", "framework", "ladybird", "dependency", "injection", "DI", "IOC"],
+  "author":       "sunseesiu",
+  "version":      "0.1.1-pre",
+  "licenses":     [{
+    "type":       "MIT",
+    "url":        "http://github.com/sunseesiu/ladybird/raw/master/LICENSE"
+  }],
+  "engines":      {
+    "node":       ">=0.4.0"
+  },
+  "directories" : {
+    "lib" : "./lib"
+  },
+  "main" : "./lib/application",
+  "bin":          {
+  },
+  "homepage":     "http://github.com/sunseesiu/ladybird",
+  "repository":   {
+    "type": "git",
+    "url": "git://github.com/sunseesiu/ladybird.git"
+  },
+  "devDependencies": {
+    "coffee-script":      ">=1.0.0"
+  }
+}
