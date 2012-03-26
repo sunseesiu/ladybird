@@ -6,6 +6,7 @@ When Dependency Injection meets CoffeeScript
 Container
 ---------
 
+``` coffeescript
     # Example Bar class
     class Bar
       output: (user) ->
@@ -32,10 +33,12 @@ Container
 
     # Get foo component and call send method
     c.get("foo").send()
+```
 
 Application
 -----------
 
+``` coffeescript
     Ladybird = require "ladybird"
     app = new Ladybird
 
@@ -56,4 +59,4 @@ Application
 
     # Start
     app.start()
-
+```
