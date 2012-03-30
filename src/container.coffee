@@ -46,8 +46,8 @@ class Container
       obj.prototype[k] = @inject(v, name)
 
     @currents[name] = false
-
-    return new obj()
+    @instances[name] = new obj()
+    return @instances[name]
 
   inject: (propertyValue, component) ->
     if typeof propertyValue == 'object'
@@ -74,4 +74,4 @@ class Container
       current = current[k]
     return current
 
-module.exports = Container
+module.exports = Container if module?
